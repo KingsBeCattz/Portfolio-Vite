@@ -1,0 +1,106 @@
+.view {
+  padding: 2rem;
+  position: relative;
+}
+
+#navbar {
+  position: sticky;
+  padding: 10px 10rem 10px 10rem;
+  text-align: start;
+  vertical-align: middle;
+  z-index: 10;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: var(--navbar-gap);
+  transition: all .1s cubic-bezier(0.39, 0.58, 0.57, 1);
+  background-color: var(--background);
+  border-bottom: 1px solid var(--line)
+}
+
+#navbar div#logo {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  gap: calc(var(--navbar-gap) - 10px);
+  padding-right: var(--navbar-gap);
+}
+
+#navbar div#routes {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content;
+  align-items: center;
+  gap: calc(var(--navbar-gap) - 10px);
+}
+
+#navbar div#links {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: calc(var(--navbar-gap) - 5px);
+}
+
+#footer {
+  position: relative;
+  height: auto;
+  padding: 15px 10rem 15px 10rem;
+  vertical-align: middle;
+  z-index: 10;
+  align-items: center;
+  transition: padding .25s cubic-bezier(0.39, 0.58, 0.57, 1);
+  border-top: 1px solid var(--line);
+  text-align: center
+}
+
+#vite-text {
+  background: linear-gradient(160deg, #00e6ff, #cf04ff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  transition: filter .3s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0 0 10px #649aff);
+  }
+}
+
+#react-text {
+  background: #00d8ff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  transition: filter .3s ease-in-out;
+
+  &:hover {
+    filter: drop-shadow(0 0 10px #61dafb);
+  }
+}
+
+#web-source {
+  opacity: 70%;
+  animation: opacity .5s ease;
+
+  &:hover {
+    opacity: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    padding: 10px 6rem 10px 6rem;
+  }
+
+  #footer {
+    padding: 10px 6rem 10px 6rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #navbar {
+    padding: 10px 1rem 10px 1rem;
+  }
+
+  #footer {
+    padding: 10px 1rem 10px 1rem;
+  }
+}

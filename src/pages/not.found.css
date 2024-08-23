@@ -1,0 +1,7 @@
+.not-found {
+  margin: auto 0 auto 0
+}
+.not-found a {
+  font-weight: bold;
+  color: var(--color)
+}

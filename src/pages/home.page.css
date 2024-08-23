@@ -1,0 +1,16 @@
+h1.typing {
+  font-family: "JetBrains Mono Semibold";
+  text-align: -webkit-left;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+
+  & span {
+    border-right: 1ch solid;
+    animation: blink .5s infinite step-end alternate;
+  }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
