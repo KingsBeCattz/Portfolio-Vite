@@ -35,5 +35,12 @@
 		"formatter": {
 			"trailingCommas": "none"
 		}
+	},
+	"css": {
+		"formatter": {
+			"lineEnding": "crlf",
+			"indentWidth": 1,
+			"indentStyle": "tab"
+		}
 	}
 }

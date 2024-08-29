@@ -1,0 +1,60 @@
+a.router-button,
+div.router-button {
+  color: var(--color);
+  text-decoration: none;
+  transition: opacity .2s ease-in-out;
+  width: 10ch;
+  height: 100%;
+  align-items: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center
+}
+
+a.router-button {
+  opacity: 70%;
+
+  &:hover {
+    opacity: 100%;
+  }
+}
+
+div.router-button {
+  cursor: pointer;
+  transition: width 10s ease;
+}
+
+a.router-button span.router-text,
+div.router-button span.router-text {
+  margin: auto 10px auto 10px;
+  transition: transform .2s ease-in-out;
+  cursor: pointer;
+}
+
+a.router-button:active span.router-text {
+  transform: scale(.95);
+}
+
+div.router-button::after {
+  background-color: var(--green);
+  width: 100%;
+  height: 1px;
+  content: "";
+  position: absolute;
+  bottom: -1px;
+
+  @starting-style {
+    width: 0%
+  }
+}
+
+div.router-button span.router-text {
+  position: relative;
+}
+
+a.router-button span.router-text::selection,
+div.router-button span.router-text::selection {
+  background-color: transparent;
+  cursor: pointer
+}

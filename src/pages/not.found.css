@@ -1,7 +1,15 @@
-.not-found {
+div.not-found {
   margin: auto 0 auto 0
 }
-.not-found a {
+div.not-found a {
   font-weight: bold;
   color: var(--color)
+}
+
+div.not-found h1 {
+  font-family: 'ABC Ginto Nord Unlicensed Trial';
+  font-weight: 900;
+  font-size: 100px;
+  margin: 0;
+  color: var(--green)
 }

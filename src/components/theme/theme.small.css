@@ -1,0 +1,70 @@
+div#config-theme-small div#theme-small {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid var(--line);
+  cursor: pointer;
+  align-content: center;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  width: min-content;
+  gap: 5px;
+  width: 9ch;
+  align-items: center;
+  justify-content: center;
+
+  & img {
+    width: 1.5ch;
+    transform: scale(1) translate(2px, -2.5%);
+  }
+}
+
+div#config-theme-small div#theme-menu-small button#config-button-option-small {
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 5px;
+  cursor: pointer;
+  text-align: start;
+  background-color: var(--background);
+  color: var(--color);
+
+  &:disabled {
+    cursor: not-allowed;
+    opacity: .5;
+    &:hover {background-color: var(--background);}
+  }
+
+  &:hover {
+    background-color: var(--selection-color);
+  }
+
+  & img {
+    width: 1.5ch;
+  }
+}
+
+div#config-theme-small div#theme-menu-small {
+  grid-template-rows: 1fr;
+  gap: 5px;
+  padding: 5px;
+  position: fixed;
+  width: max-content;
+  border: 2px solid var(--line);
+  padding: 5px;
+  background-color: var(--background);
+  border-radius: 0 5px 5px 5px;
+  display: none;
+  width: 105px
+}
+
+div#config-theme-small:hover div#theme-menu-small {
+  display: grid;
+}
+
+div#config-theme-small:hover div#theme-small {
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-color: transparent;
+}

@@ -14,5 +14,9 @@
 }
 
 .link .link-icon {
-  position: relative
+  position: relative;
+
+  &::selection {
+    background-color: transparent;
+  }
 }

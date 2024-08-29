@@ -1,0 +1,19 @@
+div#project-messages {
+  --maxwidth: 650px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--maxwidth), 1fr));
+}
+
+div#project-messages div.message {
+  &:nth-child(1) {
+    grid-column: 1 / -1;
+    margin: 0 auto;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 650px) {
+  div#project-messages {
+    --maxwidth: 100%;
+  }
+}

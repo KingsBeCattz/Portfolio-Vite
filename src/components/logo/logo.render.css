@@ -1,0 +1,10 @@
+div#logo {
+  display: grid;
+  grid-template-columns: min-content auto;
+  align-items: center;
+  gap: calc(var(--navbar-gap) * .25);
+}
+
+div#logo div.avatar {
+  box-sizing: content-box;
+}

@@ -1,0 +1,9 @@
+<svg fill="#ebebeb" width="256px" height="256px" viewBox="0 0 256.00 256.00" id="Flat" xmlns="http://www.w3.org/2000/svg" stroke="#ebebeb">
+  <g id="SVGRepo_bgCarrier" stroke-width="0" transform="translate(6.400000000000006,6.400000000000006), scale(0.95)">
+    <rect x="0" y="0" width="256.00" height="256.00" rx="128" fill="#999999" strokewidth="0"></rect>
+  </g>
+  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+  <g id="SVGRepo_iconCarrier">
+    <path d="M172,120a44,44,0,1,1-44-44A44.04978,44.04978,0,0,1,172,120Zm60,8A104,104,0,1,1,128,24,104.11791,104.11791,0,0,1,232,128Zm-16,0A88,88,0,1,0,62.2417,186.41016a79.7048,79.7048,0,0,1,24.43115-22.97461,59.83641,59.83641,0,0,0,82.6543,0,79.70266,79.70266,0,0,1,24.43091,22.97461A87.63623,87.63623,0,0,0,216,128Z"></path>
+  </g>
+</svg>

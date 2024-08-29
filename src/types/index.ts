@@ -1,0 +1,75 @@
+declare global {
+	interface DiscordArts {
+		basicInfo: {
+			id: string;
+			bot: boolean;
+			verified?: boolean;
+			username: string;
+			legacyUsername: string | null;
+			globalName: string | null;
+			tag: string;
+			discriminator: string | null;
+			createdTimestamp: number;
+		};
+		nitroData: null;
+		decoration: {
+			avatarFrame: string | null;
+			profileColors: string[] | null;
+		};
+		assets: {
+			badges: {
+				name: string;
+				icon: string;
+			}[];
+			defaultAvatarURL: string;
+			avatarURL: string | null;
+		};
+	}
+
+	interface DustinProfileAPI {
+		user: {
+			id: string;
+			username: string;
+			global_name: string | null;
+			avatar: string | null;
+			avatar_decoration_data: {
+				asset: string;
+				sku_id: string;
+				expires_at: string | null;
+			} | null;
+			discriminator: string;
+			public_flags: number;
+			clan: null;
+			flags: number;
+			banner: string | null;
+			banner_color: string | null;
+			accent_color: number | null;
+			bio: string;
+		};
+		user_profile: {
+			bio: string;
+			accent_color?: number | null;
+			pronouns?: string;
+			profile_effect?: {
+				id: string;
+				expires_at: number | null;
+			} | null;
+			banner: string | null;
+			theme_colors?: [number, number];
+			popout_animation_particle_type: null;
+			emoji: null;
+		};
+		legacy_username: string | null;
+		connected_accounts: {
+			type: string;
+			id: string;
+			name: string;
+			verified: boolean;
+		}[];
+		premium_since: string | null;
+		premium_type: number | null;
+		premium_guild_since: string | null;
+	}
+}
+
+export type {};
